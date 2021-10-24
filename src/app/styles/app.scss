@@ -1,0 +1,11 @@
+@import '~normalize.css';
+@import './../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+/*Utils*/
+@import 'base/fonts';
+@import 'base/colors';
+@import 'base/mixins';
+@import 'base/globals';
+
+/*Layouts*/
+@import 'layouts/core__navbar';

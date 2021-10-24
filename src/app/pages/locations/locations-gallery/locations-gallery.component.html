@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="card__location" [routerLink]="['/locations', item.id]" *ngFor="let item of locations">
+    <h3>{{item.name}}</h3>
+  </div>
+  <div class="card__info">
+    <p>{{info.id}}</p>
+  </div>
+</div>
+

@@ -1,0 +1,11 @@
+<div class="c-character-detail">
+  <h2>Selected Location</h2>
+  <div>
+      <button [routerLink]="['/locations']">Go Back</button>
+      <h3>{{locationDetail.name }}</h3>
+      <img src="{{locationDetail.image}}" alt="{{locationDetail.name}}">
+      <p>Specie : <span>{{locationDetail.species }}</span></p>
+      <p>I am : <span>{{locationDetail.status }}</span></p>
+      <p>Gender : <span>{{locationDetail.gender }}</span></p>
+  </div>
+</div>

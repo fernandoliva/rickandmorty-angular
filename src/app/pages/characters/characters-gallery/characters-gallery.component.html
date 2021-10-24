@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="card__character" [routerLink]="['/characters', item.id]" *ngFor="let item of characters">
+    <h3>{{item.name}}</h3>
+  </div>
+  <div class="card__info">
+    <p>{{info.id}}</p>
+  </div>
+</div>
