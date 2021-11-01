@@ -1,8 +1,10 @@
-<div class="container">
-  <div class="card__character" [routerLink]="['/characters', item.id]" *ngFor="let item of characters">
-    <h3>{{item.name}}</h3>
-  </div>
-  <div class="card__info">
-    <p>{{info.id}}</p>
+<div class="container container__character shadow">
+  <div class="row m-5 pt-5 pb-4">
+      <div class="card__main col-xl-3 col-md-4 col-xs-6 text-center mb-4" [routerLink]="['/characters', item.id]" *ngFor="let item of characters">
+        <div class="card__character h-100 d-flex flex-column align-items-center justify-content-between shadow">
+          <img src="{{item.image}}" alt="{{item.name}}" class="pb-4">
+          <h4>{{item.name}}</h4>
+        </div>
+      </div>
   </div>
 </div>

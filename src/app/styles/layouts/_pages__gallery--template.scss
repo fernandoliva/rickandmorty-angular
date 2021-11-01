@@ -1,0 +1,26 @@
+body{
+  background-color: $dark;
+}
+
+.card__main{
+  cursor:zoom-in;
+}
+
+.container__character{
+  background-color: $darkBlue;
+}
+
+.card__character{
+  border: 1px solid $lightBlue;
+  background-color: $lightBlue;
+  color: $light;
+  padding: 4rem 2rem 1rem;
+
+  img{
+    max-height: 250px;
+    height: 100%;
+    width: auto;
+    text-align: center;
+  }
+}
+

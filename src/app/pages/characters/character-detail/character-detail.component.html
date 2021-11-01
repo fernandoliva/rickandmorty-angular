@@ -1,11 +1,20 @@
-<div class="c-character-detail">
-  <h2>Selected Episode</h2>
-  <div>
-      <button [routerLink]="['/characters']">Go Back</button>
-      <h3>{{characterDetail.name }}</h3>
-      <img src="{{characterDetail.image}}" alt="{{characterDetail.name}}">
-      <p>Specie : <span>{{characterDetail.species }}</span></p>
-      <p>I am : <span>{{characterDetail.status }}</span></p>
-      <p>Gender : <span>{{characterDetail.gender }}</span></p>
+<div class="container container__detail shadow">
+  <div class="row mt-5">
+    <div class="col-12 p-5">
+      <div class="card_detail p-5">
+        <div class="row">
+          <div class="col-lg-4 col-xs-12">
+            <img src="{{characterDetail.image}}" alt="{{characterDetail.name}}" class="shadow">
+          </div>
+          <div class="col-lg-8 col-xs-12 card__detail shadow">
+            <h2>{{characterDetail.name }}</h2>
+            <p>Estoy : <span>{{characterDetail.status }}</span></p>
+            <p>Género : <span>{{characterDetail.gender }}</span></p>
+            <p>Especie : <span>{{characterDetail.species }}</span></p>
+            <a [routerLink]="['/characters']">Volver atrás</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
