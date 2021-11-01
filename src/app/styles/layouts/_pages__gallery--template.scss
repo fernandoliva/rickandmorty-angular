@@ -3,18 +3,35 @@ body{
 }
 
 .card__main{
-  cursor:zoom-in;
+  cursor:pointer;
+  :hover{
+    background-color: $grey;
+    color: $dark;
+    transition: 350ms;
+  }
 }
 
 .container__character{
   background-color: $darkBlue;
 }
 
+.container__episodes{
+  background-color: $dark;
+
+  .card__main{
+    cursor:auto;
+    :hover{
+      background-color: $green;
+      color: $dark;
+      transition: 350ms;
+    }
+  }
+}
+
 .card__character{
   border: 1px solid $lightBlue;
   background-color: $lightBlue;
   color: $light;
-  padding: 4rem 2rem 1rem;
 
   img{
     max-height: 250px;
@@ -22,5 +39,26 @@ body{
     width: auto;
     text-align: center;
   }
+}
+
+.card_location{
+  border: 1px solid $purple;
+  background-color: $purple;
+  color: $light;
+  border-radius: 10px;
+
+  img{
+    max-height: 250px;
+    height: 100%;
+    width: auto;
+    text-align: center;
+  }
+}
+
+.card__episodes{
+  border: 1px solid $darkPurple;
+  background-color: $darkPurple;
+  color: $light;
+  border-radius: 10px;
 }
 

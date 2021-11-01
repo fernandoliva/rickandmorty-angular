@@ -1,0 +1,13 @@
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $darkBlue;
+  color: $light;
+
+  a{
+    text-decoration: none;
+    color: $light;
+  }
+}

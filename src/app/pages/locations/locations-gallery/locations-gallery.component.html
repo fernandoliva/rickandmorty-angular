@@ -1,9 +1,9 @@
-<div class="container">
-  <div class="card__location" [routerLink]="['/locations', item.id]" *ngFor="let item of locations">
-    <h3>{{item.name}}</h3>
-  </div>
-  <div class="card__info">
-    <p>{{info.id}}</p>
+<div class="container container__character shadow">
+  <div class="row m-5 pt-5 pb-4">
+      <div class="card__main col-xl-3 col-md-4 col-xs-6 text-center mb-4" [routerLink]="['/locations', item.id]" *ngFor="let item of locations">
+        <div class="card_location h-100 d-flex flex-column align-items-center justify-content-around shadow my-auto py-5">
+          <h3 class="mb-0 mt-1">{{item.name}}</h3>
+        </div>
+      </div>
   </div>
 </div>
-

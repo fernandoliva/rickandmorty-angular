@@ -1,11 +1,16 @@
-<div class="c-character-detail">
-  <h2>Selected Location</h2>
-  <div>
-      <button [routerLink]="['/locations']">Go Back</button>
-      <h3>{{locationDetail.name }}</h3>
-      <img src="{{locationDetail.image}}" alt="{{locationDetail.name}}">
-      <p>Specie : <span>{{locationDetail.species }}</span></p>
-      <p>I am : <span>{{locationDetail.status }}</span></p>
-      <p>Gender : <span>{{locationDetail.gender }}</span></p>
+<div class="container container__detail--location">
+  <div class="row mt-5">
+    <div class="col-12 p-5">
+      <div class="card_detail p-5">
+        <div class="row">
+          <div class="col-lg-6 col-xs-12 card__detail shadow m-5 p-5 mx-auto">
+            <h3>{{locationDetail.name }}</h3>
+            <p>Type: <span>{{locationDetail.type }}</span></p>
+            <p>Dimension: <span>{{locationDetail.dimension }}</span></p>
+            <a [routerLink]="['/locations']" class="mt-3">Volver atrás</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

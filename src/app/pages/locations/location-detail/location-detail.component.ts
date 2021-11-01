@@ -18,7 +18,7 @@ export class LocationDetailComponent implements OnInit {
       let id = param.get('id');
       this.locationsService.getLocationById(id).subscribe((location) =>{
         this.locationDetail = location;
-        console.log(this.locationDetail);
+        // console.log(this.locationDetail);
       })
     })
   }

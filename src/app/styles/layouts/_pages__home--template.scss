@@ -1,0 +1,32 @@
+.container__home{
+  background-color: $dark;
+
+
+}
+
+.home__main{
+  img{
+    width: 100%;
+  }
+}
+
+.home__desc{
+  img{
+    width: 100%;
+  };
+
+  .home__desc--text{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    h3{
+      text-align: right;
+      color: $light;
+      font-weight: bold;
+    }
+  }
+}
+

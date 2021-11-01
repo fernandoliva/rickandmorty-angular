@@ -1,24 +1,47 @@
-.card__main{
-  cursor:zoom-in;
-}
-
 .container__detail{
   background-color: $darkBlue;
-}
 
-.card__detail{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: $light;
-  background-color: $red;
-  a{
-    background-color: $dark;
-    padding: 1rem 3rem;
-    border-radius: 8px;
+  .card__detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     color: $light;
-    text-align: center;
+    background-color: $red;
+    a{
+      background-color: $dark;
+      padding: 1rem 3rem;
+      border-radius: 8px;
+      color: $light;
+      text-align: center;
+    }
   }
 }
+
+.container__detail--location{
+  background-color: $dark;
+
+  .card__detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $light;
+    background-color: $purple;
+
+    h3{
+      font-weight: bold;
+    }
+
+    a{
+      background-color: $lightBlue;
+      padding: 1rem 3rem;
+      border-radius: 8px;
+      color: $light;
+      text-align: center;
+    }
+  }
+}
+
+
 
