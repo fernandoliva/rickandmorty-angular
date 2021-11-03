@@ -8,7 +8,7 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { FooterComponent } from './core/footer/footer.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { CarouselModule } from 'primeng/carousel';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { CarouselModule } from 'primeng/carousel';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CarouselModule
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
