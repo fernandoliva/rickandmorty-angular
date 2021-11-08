@@ -15,6 +15,17 @@
       color: $light;
       text-align: center;
     }
+    img{
+      @include phone{
+        width: 85%;
+        height: auto;
+      }
+      @include desktop{
+        width: auto;
+        height: auto;
+      }
+
+    }
   }
 }
 
